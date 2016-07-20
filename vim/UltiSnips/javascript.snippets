@@ -1,0 +1,45 @@
+# General Javascript
+snippet log "console.log()" b
+console.log($0);
+endsnippet
+
+snippet todo "simple TODO" 
+// TODO: $0
+endsnippet
+
+## Javascript function snippets
+snippet afn "Anonymous function"
+function($1) {
+
+	$0
+
+}
+endsnippet
+
+
+
+#######
+
+
+# ExpressJS snippets
+snippet .get "ExpressJS GET Method"
+${1:app}.get("${2:/}", function(${3:req}, ${4:res}, ${5:next}){
+
+	$0
+
+});
+endsnippet
+snippet .post "ExpressJS POST Method"
+${1:app}.post("${2:/}", function(${3:req}, ${4:res}, ${5:next}){
+
+	$0
+
+});
+endsnippet
+snippet .use "ExpressJS use Method"
+${1:app}.use("${2:/}", function(${3:req}, ${4:res}, ${5:next}){
+
+	$0
+
+});
+endsnippet
